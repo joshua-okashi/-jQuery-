@@ -1,0 +1,72 @@
+.carousel {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin: 200px auto;
+  overflow: hidden;
+}
+.carousel ul,
+.carousel li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.carousel .img-ct {
+  position: absolute;
+  overflow: hidden;
+}
+.carousel .img-ct:after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+.carousel .img-ct>li {
+  float: left;
+}
+.carousel .img-ct img {
+  width: 800px;
+  height: 450px;
+}
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  line-height: 30xp;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+}
+.carousel .arrow:hover {
+  opacity: 0.8;
+}
+.carousel .pre {
+  left: 10px;
+}
+.carousel .next {
+  right: 10px;
+}
+.carousel .bullet {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 0;
+  z-index: 1;
+  text-align: center;
+}
+.carousel .bullet>li {
+  display: inline-block;
+  width: 40px;
+  height: 13px;
+  border-radius: 8px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.carousel .bullet>li.active{
+ background-color: #ccc; 
+}
